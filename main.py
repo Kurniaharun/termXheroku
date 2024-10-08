@@ -2,15 +2,7 @@ import os
 import subprocess
 import sys
 
-def install_required_packages():
-    """Auto-install necessary Python packages if not already installed."""
-    required_packages = ['requests']  # Tambahkan modul lain yang perlu diinstal secara otomatis
 
-    for package in required_packages:
-        try:
-            __import__(package)
-        except ImportError:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
 def git_configure():
     try:
