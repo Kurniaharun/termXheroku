@@ -1,8 +1,5 @@
 import os
 import subprocess
-import sys
-
-
 
 def git_configure():
     try:
@@ -198,10 +195,8 @@ def handle_command(command):
         print("Perintah tidak valid.")
 
 def main():
-    install_required_packages()
     while True:
         os.system("clear")
-        print("=== Heroku Panel ===")
         display_menu()
         choice = input("Masukkan pilihan Anda: ")
         handle_command(choice)
